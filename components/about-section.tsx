@@ -88,7 +88,8 @@ export function AboutSection() {
               {/* Main Image */}
               <div className="relative h-125 rounded-3xl overflow-hidden">
                 <img
-                  src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+                  // src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=800&q=80"
+                  src="/images/team.jpeg"
                   alt="Team collaboration"
                   className="w-full h-full object-cover"
                 />

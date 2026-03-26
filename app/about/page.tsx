@@ -23,28 +23,32 @@ const teamMembers = [
     role: "Founder & CEO",
     bio: "With over 15 years of experience in international recruitment and a passion for connecting Burundian talent with global opportunities.",
     image:
-      "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      // "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
+      "/images/ceo.jpeg",
   },
   {
     name: "Marie-Claire Ndayisaba",
     role: "Director of Operations",
     bio: "Expert in visa processing and immigration services with connections across 25+ countries.",
     image:
-      "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",
+      // "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",
+      "/images/team1.jpg",
   },
   {
     name: "Emmanuel Hakizimana",
     role: "Head of Education Services",
     bio: "Former university advisor helping students achieve their academic dreams abroad for over a decade.",
     image:
-      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      // "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
+      "/images/team2.jpg",
   },
   {
     name: "Diane Uwimana",
     role: "Travel & Logistics Manager",
     bio: "Certified travel consultant ensuring smooth journeys for all our clients worldwide.",
     image:
-      "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+      // "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
+      "/images/team3.jpg",
   },
 ];
 
@@ -143,7 +147,8 @@ export default function AboutPage() {
               <div className="absolute -top-4 -left-4 w-full h-full border-2 border-primary/20 rounded-3xl" />
               <div className="relative overflow-hidden rounded-3xl">
                 <Image
-                  src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=900&fit=crop"
+                  // src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=900&fit=crop"
+                  src="/images/ceo.jpeg"
                   alt="Jean-Pierre Niyonzima - CEO"
                   width={600}
                   height={700}
