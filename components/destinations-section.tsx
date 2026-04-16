@@ -9,7 +9,10 @@ const destinations = [
     type: "Study & Work",
     opportunities: "120+",
     image:
-      "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800&q=80",
+      // "https://images.unsplash.com/photo-1538485399081-7191377e8241?w=800&q=80",
+      // another picture with a white background for South Korea in the city
+      // GIve me a better picture for city life
+      "images/korea.jpg",
   },
   {
     country: "India",
@@ -28,20 +31,23 @@ const destinations = [
       "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&q=80",
   },
   {
-    country: "Canada",
-    flag: "CA",
-    type: "Study & Work",
+    country: "Italy",
+    flag: "IT",
+    type: "Study",
     opportunities: "150+",
     image:
-      "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80",
+      // "https://images.unsplash.com/photo-1517935706615-2717063c2225?w=800&q=80",
+      // "https://images.unsplash.com/photo-1506744038136-46273834b3fb?w=800&q=80",
+      "https://plus.unsplash.com/premium_photo-1675975678457-d70708bf77c8?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    country: "Germany",
-    flag: "DE",
+    country: "Kosovo",
+    flag: "XK",
     type: "Study & Work",
     opportunities: "90+",
     image:
-      "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80",
+      // "https://images.unsplash.com/photo-1467269204594-9661b134dd2b?w=800&q=80",
+      "images/kosovo.jpg",
   },
   {
     country: "Malaysia",
@@ -100,7 +106,7 @@ export function DestinationsSection() {
               <div className="absolute inset-0 p-6 flex flex-col justify-between">
                 {/* Top */}
                 <div className="flex justify-between items-start">
-                  <span className="inline-block bg-background/20 backdrop-blur-sm text-background px-3 py-1 rounded-full text-xs font-medium">
+                  <span className="inline-block bg-background/20 backdrop-blur-sm text-black px-3 py-1 rounded-full text-xs font-medium">
                     {destination.type}
                   </span>
                   <div className="w-10 h-10 bg-background/20 backdrop-blur-sm rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity">

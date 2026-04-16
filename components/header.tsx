@@ -39,11 +39,11 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/niban-logo.png"
-              alt="Niban Recruitment Agency"
-              width={140}
-              height={50}
-              className="h-10 w-auto md:h-12"
+              src="/images/NIBAN-logo.png"
+              alt="NIBAN Recruitment Agency"
+              width={200}
+              height={80}
+              className="h-14 w-auto md:h-20"
               priority
             />
           </Link>
@@ -73,7 +73,10 @@ export function Header() {
 
           {/* Mobile Menu Toggle */}
           <button
-            onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
+            onClick={() => {
+              setIsMobileMenuOpen(!isMobileMenuOpen);
+              isScrolled ? null : setIsScrolled(true); // Ensure header is scrolled when menu opens
+            }}
             className="lg:hidden p-2 text-foreground"
             aria-label="Toggle menu"
           >

@@ -14,6 +14,10 @@ import {
   Mail,
   MapPin,
   Clock,
+  Book,
+  Speaker,
+  SpeakerIcon,
+  Languages,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -21,49 +25,21 @@ import { Textarea } from "@/components/ui/textarea";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 
-// =============================================================================
-// GOOGLE FORM CONFIGURATION
-// =============================================================================
-//
-// HOW TO SET UP:
-// 1. Create a Google Form with these fields:
-//    - Service Type (Short answer or Dropdown)
-//    - Full Name (Short answer)
-//    - Email (Short answer)
-//    - Phone (Short answer)
-//    - Destination (Short answer or Dropdown)
-//    - Education Level (Short answer or Dropdown)
-//    - Experience/Field of Study (Short answer)
-//    - Message (Paragraph)
-//
-// 2. Get your form URL:
-//    - Open your Google Form
-//    - Click the three dots menu > Get pre-filled link
-//    - Or use the form URL: https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse
-//
-// 3. Get your entry IDs:
-//    - Open the form in preview mode
-//    - Right-click > Inspect > Find input fields
-//    - Each field has a name like "entry.1234567890"
-//    - Copy the numbers after "entry."
-//
-// 4. Replace the values below with your actual form URL and entry IDs:
-// =============================================================================
-
 const GOOGLE_FORM_CONFIG = {
   // Replace with your Google Form URL (use formResponse, not viewform)
-  formUrl: "https://docs.google.com/forms/d/e/YOUR_FORM_ID/formResponse",
+  formUrl:
+    "https://docs.google.com/forms/d/e/1FAIpQLSeeG0TefeT7kME2Z9EqSljOWrY4kEtqL0MVvg_gHW7FBTVuhQ/formResponse",
 
   // Replace with your entry IDs from the Google Form
   entryIds: {
-    serviceType: "entry.XXXXXXXXXX", // e.g., "entry.1234567890"
-    fullName: "entry.XXXXXXXXXX",
-    email: "entry.XXXXXXXXXX",
-    phone: "entry.XXXXXXXXXX",
-    destination: "entry.XXXXXXXXXX",
-    education: "entry.XXXXXXXXXX",
-    experience: "entry.XXXXXXXXXX",
-    message: "entry.XXXXXXXXXX",
+    serviceType: "entry.736642024", // e.g., "entry.1234567890"
+    fullName: "entry.1221359818",
+    email: "entry.1871200134",
+    phone: "entry.61664188",
+    destination: "entry.74290289",
+    education: "entry.1631701330",
+    experience: "entry.72379462",
+    message: "entry.962120051",
   },
 };
 
@@ -92,6 +68,15 @@ const services = [
     description: "Book your travel arrangements",
     color: "primary",
   },
+  // New Service for English Coaching
+  {
+    id: "english",
+    label: "English Coaching",
+    icon: Languages,
+    title: "English Coaching",
+    description: "Improve your English for better opportunities",
+    color: "secondary",
+  },
 ];
 
 const workDestinations = [
@@ -99,22 +84,22 @@ const workDestinations = [
   "United Arab Emirates",
   "Saudi Arabia",
   "Qatar",
-  "Kuwait",
-  "Canada",
-  "Germany",
-  "Malaysia",
+  // "Kuwait",
+  // "Canada",
+  "Italy",
+  "Kosovo",
   "Other",
 ];
 
 const studyDestinations = [
   "South Korea",
   "India",
-  "China",
+  "Kosovo",
   "Turkey",
   "Malaysia",
   "Russia",
   "Germany",
-  "Canada",
+  "Italy",
   "Other",
 ];
 
@@ -122,6 +107,7 @@ const educationLevels = [
   "High School Diploma",
   "Bachelor's Degree",
   "Master's Degree",
+  "PhD's Degree",
   "Vocational Training",
   "Other",
 ];
@@ -130,14 +116,14 @@ const contactInfo = [
   {
     icon: Phone,
     label: "Phone",
-    value: "+257 79 000 000",
-    href: "tel:+25779000000",
+    value: "+257 66 662 326",
+    href: "tel:+25766662326",
   },
   {
     icon: Mail,
     label: "Email",
-    value: "info@nibanagency.com",
-    href: "mailto:info@nibanagency.com",
+    value: "niban.agence@gmail.com",
+    href: "mailto:niban.agence@gmail.com",
   },
   {
     icon: MapPin,
@@ -219,6 +205,17 @@ export default function GetStartedPage() {
       formData.message,
     );
 
+    console.log("Submitting to Google Form with data:", {
+      serviceType: getServiceLabel(),
+      fullName: formData.fullName,
+      email: formData.email,
+      phone: formData.phone,
+      destination: formData.destination,
+      education: formData.education,
+      experience: formData.experience,
+      message: formData.message,
+    });
+
     // Convert FormData to URLSearchParams for the URL
     const params = new URLSearchParams();
     googleFormData.forEach((value, key) => {
@@ -245,6 +242,8 @@ export default function GetStartedPage() {
     try {
       // Submit to Google Forms
       submitToGoogleForm();
+
+      console.log("Reached here safely");
 
       // Small delay to ensure submission goes through
       await new Promise((resolve) => setTimeout(resolve, 1000));
@@ -274,7 +273,7 @@ export default function GetStartedPage() {
           </div>
           <h3 className="text-2xl font-bold mb-4">Application Submitted!</h3>
           <p className="text-muted-foreground max-w-md mx-auto mb-8">
-            Thank you for choosing Niban Recruitment Agency. Our team will
+            Thank you for choosing NIBAN Recruitment Agency. Our team will
             review your application and contact you within 24-48 hours.
           </p>
           <Link href="/">
@@ -570,7 +569,7 @@ export default function GetStartedPage() {
 
       {/* Hero Section */}
       <section className="relative pt-32 pb-12 overflow-hidden">
-        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e56a008_1px,transparent_1px),linear-gradient(to_bottom,#1e56a008_1px,transparent_1px)] bg-[size:4rem_4rem]" />
+        <div className="absolute inset-0 bg-[linear-gradient(to_right,#1e56a008_1px,transparent_1px),linear-gradient(to_bottom,#1e56a008_1px,transparent_1px)] bg-size-[4rem_4rem]" />
         <div className="absolute top-20 right-0 w-96 h-96 bg-primary/5 rounded-full blur-3xl" />
 
         <div className="relative z-10 mx-auto max-w-7xl px-6 lg:px-8">
@@ -632,7 +631,7 @@ export default function GetStartedPage() {
                 {/* Image */}
                 <div className="rounded-3xl overflow-hidden mb-8">
                   <Image
-                    src="https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=600&h=400&fit=crop"
+                    src="images/location.jpeg"
                     alt="Team consultation"
                     width={600}
                     height={400}
@@ -671,7 +670,7 @@ export default function GetStartedPage() {
                 {/* Trust Badges */}
                 <div className="mt-8 grid grid-cols-3 gap-4 text-center">
                   <div className="p-4 rounded-xl bg-muted/50">
-                    <div className="text-2xl font-bold text-primary">500+</div>
+                    <div className="text-2xl font-bold text-primary">150+</div>
                     <div className="text-xs text-muted-foreground">
                       Placements
                     </div>

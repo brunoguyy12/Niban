@@ -7,6 +7,8 @@ import {
   Plane,
   ArrowUpRight,
   ChevronRight,
+  Book,
+  Languages,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
 
@@ -20,14 +22,15 @@ const services = [
     description:
       "We connect talented professionals from Burundi with employment opportunities worldwide. Our comprehensive service includes job matching, visa processing, document preparation, and relocation support.",
     features: [
-      "Job placement in 25+ countries",
+      "Job placement in 5+ countries",
       "Work visa processing & guidance",
       "Document preparation & verification",
       "Pre-departure orientation",
       "Employer partnerships",
     ],
     image:
-      "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80",
+      // "https://images.unsplash.com/photo-1521737711867-e3b97375f902?w=800&q=80",
+      "images/work-abroad.jpg",
   },
   {
     id: "study",
@@ -46,7 +49,8 @@ const services = [
     ],
     // image: "https://images.unsplash.com/photo-1523050854058-8df90110c9f1?w=800&q=80",
     image:
-      "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800&q=80",
+      // "https://images.unsplash.com/photo-1571260899304-425eee4c7efc?w=800&q=80",
+      "https://plus.unsplash.com/premium_photo-1726769058816-e723e6c66f1a?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
     id: "travel",
@@ -64,7 +68,30 @@ const services = [
       "Group booking discounts",
     ],
     image:
-      "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+      // "https://images.unsplash.com/photo-1436491865332-7a61a109cc05?w=800&q=80",
+      "images/flight-bdi.jpg",
+  },
+
+  // Add a new Service for English Coaching
+  {
+    id: "english",
+    // icon: GraduationCap,
+    icon: Languages, // You can choose a study icon if you have one for English Coaching
+    number: "04",
+    title: "English Coaching",
+    subtitle: "Language Training",
+    description:
+      "Master English for your global journey. Our personalized coaching helps you improve your language skills, boost confidence, and prepare for success in work or study abroad.",
+    features: [
+      "Personalized coaching sessions",
+      "Focus on speaking, listening, reading & writing",
+      "IELTS & TOEFL preparation",
+      "Flexible scheduling",
+      "Experienced advanced speaking coaches",
+    ],
+    image:
+      // "https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800&q=80",
+      "images/english.jpg",
   },
 ];
 
@@ -77,10 +104,10 @@ export function ServicesSection() {
       <div className="mx-auto max-w-7xl px-6 lg:px-8">
         {/* Section Header */}
         <div className="max-w-2xl">
-          <p className="text-sm font-semibold text-secondary uppercase tracking-widest">
+          <p className="text-md font-bold text-secondary uppercase tracking-widest">
             Our Services
           </p>
-          <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+          <h2 className="mt-4 text-xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
             Comprehensive solutions for your global journey
           </h2>
         </div>
@@ -171,11 +198,11 @@ export function ServicesSection() {
                 ))}
               </ul>
 
-              {/* CTA */}
+              {/* CTA
               <button className="mt-8 inline-flex items-center gap-2 text-primary font-medium group">
                 Learn more about {active.title.toLowerCase()}
                 <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-              </button>
+              </button> */}
             </div>
           </div>
         </div>

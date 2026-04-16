@@ -1,12 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
-import {
-  Facebook,
-  Instagram,
-  Twitter,
-  Linkedin,
-  ArrowUpRight,
-} from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
+import { FaFacebook, FaWhatsapp } from "react-icons/fa6";
 
 const footerLinks = {
   services: [
@@ -39,10 +34,18 @@ const footerLinks = {
 };
 
 const socialLinks = [
-  { icon: Facebook, href: "#", label: "Facebook" },
-  { icon: Instagram, href: "#", label: "Instagram" },
-  { icon: Twitter, href: "#", label: "Twitter" },
-  { icon: Linkedin, href: "#", label: "LinkedIn" },
+  {
+    icon: FaFacebook,
+    href: "https://www.facebook.com/profile.php?id=100082982454607#",
+    label: "Facebook",
+  },
+  {
+    icon: FaWhatsapp,
+    href: "https://wa.me/66662326?text=Hello%20I%20would%20like%20more%20information%20on%20NIBAN%20Recruitment",
+    label: "Whatsapp",
+  },
+  // { icon: Twitter, href: "#", label: "Twitter" },
+  // { icon: Linkedin, href: "#", label: "LinkedIn" },
 ];
 
 export function Footer() {
@@ -77,11 +80,11 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="col-span-2">
             <Image
-              src="/images/niban-logo.png"
-              alt="Niban Recruitment Agency"
-              width={140}
-              height={50}
-              className="h-12 w-auto brightness-0 invert"
+              src="/images/NIBAN-logo.png"
+              alt="NIBAN Recruitment Agency"
+              width={200}
+              height={80}
+              className="h-16 md:h-20 w-auto brightness-0 invert"
             />
             <p className="mt-6 text-background/70 max-w-xs leading-relaxed">
               Connecting talent from Burundi to global opportunities. Your
@@ -177,7 +180,7 @@ export function Footer() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row items-center justify-between gap-4 text-sm text-background/60">
             <p>
-              &copy; {new Date().getFullYear()} Niban Recruitment Agency. All
+              &copy; {new Date().getFullYear()} NIBAN Recruitment Agency. All
               rights reserved.
             </p>
             <p>Connecting Talent Globally</p>

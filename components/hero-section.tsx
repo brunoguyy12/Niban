@@ -27,7 +27,7 @@ export function HeroSection() {
         {/* Badge */}
         <div className="animate-fade-up inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full text-sm font-medium mb-8">
           <span className="w-2 h-2 bg-secondary rounded-full animate-pulse" />
-          Connecting Talent Globally Since 2018
+          Supplying Manpower Globally Since 2025
         </div>
 
         {/* Main Headline */}
@@ -81,9 +81,9 @@ export function HeroSection() {
         {/* Stats */}
         <div className="animate-fade-up animation-delay-600 mt-20 grid grid-cols-2 md:grid-cols-4 gap-8 max-w-3xl mx-auto">
           {[
-            { number: "500+", label: "Successful Placements" },
-            { number: "25+", label: "Partner Countries" },
-            { number: "150+", label: "University Partners" },
+            { number: "150+", label: "Successful Placements" },
+            { number: "5+", label: "Partner Countries" },
+            { number: "20+", label: "University Partners" },
             { number: "98%", label: "Visa Success Rate" },
           ].map((stat) => (
             <div key={stat.label} className="text-center">

@@ -19,33 +19,39 @@ import { Footer } from "@/components/footer";
 
 const teamMembers = [
   {
-    name: "Jean-Pierre Niyonzima",
+    name: "Cheri NIBARUTA",
     role: "Founder & CEO",
-    bio: "With over 15 years of experience in international recruitment and a passion for connecting Burundian talent with global opportunities.",
+    bio: "With over 3 years of experience in international recruitment and a passion for connecting Burundian talent with global opportunities.",
     image:
       // "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=400&h=400&fit=crop&crop=face",
       "/images/ceo.jpeg",
   },
   {
-    name: "Marie-Claire Ndayisaba",
-    role: "Director of Operations",
-    bio: "Expert in visa processing and immigration services with connections across 25+ countries.",
+    name: "Santha Ornette IMUNKURIZE",
+    // role: "Director of Operations",
+    role: "Services Manager",
+    // bio similar to the one below but with a focus on financial management and operational efficiency
+    bio: "In Charge of visa processing and immigration services with connections across 25+ countries.",
     image:
       // "https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=400&h=400&fit=crop&crop=face",
       "/images/team1.jpg",
   },
   {
-    name: "Emmanuel Hakizimana",
-    role: "Head of Education Services",
-    bio: "Former university advisor helping students achieve their academic dreams abroad for over a decade.",
+    name: "Dorine NIYONZIMA",
+    role: "Customer Care Manager",
+    // bio similar to the one below but with a focus on student counseling and educational consulting
+    bio: "Dedicated customer care manager focused on student counseling and educational consulting.",
+    // bio: "Former university advisor helping students achieve their academic dreams abroad for over two years.",
     image:
       // "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&h=400&fit=crop&crop=face",
       "/images/team2.jpg",
   },
   {
-    name: "Diane Uwimana",
-    role: "Travel & Logistics Manager",
-    bio: "Certified travel consultant ensuring smooth journeys for all our clients worldwide.",
+    name: "Aline KANEZA",
+    role: "Operations Manager",
+    // bio similar to the one below but with a focus on visa processing and operations manager role
+    // bio: "Certified travel consultant ensuring smooth journeys for all our clients worldwide.",
+    bio: "Experienced manager specializing in travel consultant ensuring smooth journeys for all our clients worldwide.",
     image:
       // "https://images.unsplash.com/photo-1580489944761-15a19d654956?w=400&h=400&fit=crop&crop=face",
       "/images/team3.jpg",
@@ -131,7 +137,7 @@ export default function AboutPage() {
               <span className="text-primary">Global Success</span>
             </h1>
             <p className="animate-fade-up animation-delay-400 mt-6 text-lg text-muted-foreground leading-relaxed">
-              Since 2018, Niban Recruitment Agency has been at the forefront of
+              Since 2025, NIBAN Recruitment Agency has been at the forefront of
               connecting talented individuals from Burundi with life-changing
               opportunities across the globe.
             </p>
@@ -173,7 +179,7 @@ export default function AboutPage() {
               </h3>
               <div className="space-y-4 text-muted-foreground leading-relaxed">
                 <p>
-                  "When I founded Niban Recruitment Agency in 2018, I had a
+                  "When I founded NIBAN Recruitment Agency in 2025, I had a
                   simple but powerful vision: to give every talented individual
                   in Burundi the chance to realize their full potential on the
                   global stage."
@@ -187,18 +193,18 @@ export default function AboutPage() {
                 <p>
                   "Today, I'm proud to lead a team of dedicated professionals
                   who share this vision. Every successful placement, every
-                  student who achieves their academic dreams, every family
-                  reunited - these are the moments that drive us forward."
+                  student who achieves their academic dreams, every safe flight
+                  - these are the moments that drive us forward."
                 </p>
                 <p className="font-medium text-foreground">
-                  "At Niban, we don't just process applications - we transform
+                  "At NIBAN, we don't just process applications - we transform
                   lives."
                 </p>
               </div>
               <div className="mt-8 flex items-center gap-4">
                 <div className="w-16 h-0.5 bg-secondary" />
                 <span className="text-muted-foreground italic">
-                  Jean-Pierre Niyonzima
+                  Cheri NIBARUTA
                 </span>
               </div>
             </div>
@@ -245,17 +251,17 @@ export default function AboutPage() {
               </div>
               <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
               <p className="text-primary-foreground/90 leading-relaxed">
-                To become East Africa's leading recruitment and education
+                To become Burundi's leading recruitment and education
                 consultancy, recognized globally for our integrity, success
                 rate, and positive impact on the lives of thousands of
                 individuals and families.
               </p>
               <div className="mt-8 pt-8 border-t border-primary-foreground/20">
                 <p className="text-sm text-primary-foreground/80 italic">
-                  "By 2030, we envision having facilitated over 10,000
-                  successful international placements and educational
-                  enrollments, creating a ripple effect of prosperity and
-                  knowledge transfer for Burundi and beyond."
+                  "By 2030, we envision having facilitated over 5,000 successful
+                  international placements and educational enrollments, creating
+                  a ripple effect of prosperity and knowledge transfer for
+                  Burundi and beyond."
                 </p>
               </div>
             </div>
@@ -271,7 +277,7 @@ export default function AboutPage() {
               Our Core Values
             </h2>
             <p className="text-muted-foreground">
-              The principles that guide everything we do at Niban.
+              The principles that guide everything we do at NIBAN.
             </p>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -298,7 +304,7 @@ export default function AboutPage() {
         <div className="mx-auto max-w-7xl px-6 lg:px-8">
           <div className="text-center max-w-2xl mx-auto mb-16">
             <h2 className="text-sm font-semibold text-primary tracking-widest uppercase mb-4">
-              The People Behind Niban
+              The People Behind NIBAN
             </h2>
             <h3 className="text-3xl md:text-4xl font-bold mb-4">
               Meet Our Leadership Team
@@ -342,7 +348,7 @@ export default function AboutPage() {
               Contributing to the UN Sustainable Development Goals
             </h3>
             <p className="text-muted-foreground">
-              At Niban, we align our work with the United Nations' vision for a
+              At NIBAN, we align our work with the United Nations' vision for a
               better world. Here's how we contribute to the SDGs:
             </p>
           </div>
@@ -388,7 +394,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-primary-foreground/80 max-w-2xl mx-auto mb-8">
             Join the hundreds of successful individuals who have transformed
-            their lives with Niban Recruitment Agency.
+            their lives with NIBAN Recruitment Agency.
           </p>
           <Link href="/get-started">
             <Button

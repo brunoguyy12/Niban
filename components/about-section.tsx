@@ -36,17 +36,18 @@ export function AboutSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           {/* Content */}
           <div>
-            <p className="text-sm font-semibold text-secondary uppercase tracking-widest">
-              About Niban
+            <p className="text-md font-bold text-secondary uppercase tracking-widest">
+              About NIBAN
             </p>
-            <h2 className="mt-4 text-3xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
+            <h2 className="mt-4 text-xl md:text-4xl lg:text-5xl font-bold text-foreground leading-tight">
               Bridging Burundi to the World
             </h2>
             <div className="mt-8 space-y-6 text-muted-foreground leading-relaxed">
               <p>
-                Founded with a vision to connect talent with opportunity, Niban
-                Recruitment Agency has been at the forefront of international
-                recruitment and education consulting since 2018. Based in
+                Founded with a vision to connect talent with opportunity, NIBAN
+                Recruitment Agency is legally registered by the Government of
+                Burundi and has been at the forefront of international
+                recruitment and education consulting since 2025. Based in
                 Burundi, we understand the dreams and aspirations of our
                 community.
               </p>
@@ -58,7 +59,7 @@ export function AboutSection() {
                 journey, we are here to guide you every step of the way.
               </p>
               <p>
-                With partnerships across 25+ countries and over 150 universities
+                With partnerships across 5+ countries and over 20 universities
                 worldwide, we have the network and expertise to turn your global
                 aspirations into reality.
               </p>
@@ -100,7 +101,7 @@ export function AboutSection() {
                 <div className="flex items-center gap-4 mb-4">
                   <div className="w-12 h-12 bg-secondary rounded-full flex items-center justify-center">
                     <span className="text-secondary-foreground font-bold text-lg">
-                      7+
+                      2+
                     </span>
                   </div>
                   <div>
@@ -124,7 +125,7 @@ export function AboutSection() {
                     ))}
                   </div>
                   <span className="text-sm text-muted-foreground">
-                    +500 happy clients
+                    +150 happy clients
                   </span>
                 </div>
               </div>
