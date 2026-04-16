@@ -39,7 +39,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
             <Image
-              src="/images/NIBAN-logo.png"
+              src="/images/niban-logo.png"
               alt="NIBAN Recruitment Agency"
               width={200}
               height={80}

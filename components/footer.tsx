@@ -80,7 +80,7 @@ export function Footer() {
           {/* Logo & Description */}
           <div className="col-span-2">
             <Image
-              src="/images/NIBAN-logo.png"
+              src="/images/niban-logo.png"
               alt="NIBAN Recruitment Agency"
               width={200}
               height={80}
