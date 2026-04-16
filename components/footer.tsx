@@ -41,7 +41,7 @@ const socialLinks = [
   },
   {
     icon: FaWhatsapp,
-    href: "https://wa.me/66662326?text=Hello%20I%20would%20like%20more%20information%20on%20NIBAN%20Recruitment",
+    href: "https://wa.me/25766662326?text=Hello%20I%20would%20like%20more%20information%20on%20NIBAN%20Recruitment",
     label: "Whatsapp",
   },
   // { icon: Twitter, href: "#", label: "Twitter" },
