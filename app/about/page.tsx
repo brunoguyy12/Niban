@@ -155,14 +155,14 @@ export default function AboutPage() {
                 <Image
                   // src="https://images.unsplash.com/photo-1560250097-0b93528c311a?w=800&h=900&fit=crop"
                   src="/images/ceo.jpeg"
-                  alt="Jean-Pierre Niyonzima - CEO"
+                  alt="Cheri NIBARUTA - CEO"
                   width={600}
                   height={700}
                   className="object-cover w-full aspect-[4/5]"
                 />
                 <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-foreground/90 to-transparent p-8">
                   <h3 className="text-2xl font-bold text-background">
-                    Jean-Pierre Niyonzima
+                    Cheri NIBARUTA
                   </h3>
                   <p className="text-background/80">
                     Founder & Chief Executive Officer
